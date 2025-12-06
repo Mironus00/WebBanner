@@ -1,2 +1,6 @@
 @import "reset.css";
 @import "fonts.css";
+
+p {
+   font-family: "Press Start 2P", system-ui;
+}
