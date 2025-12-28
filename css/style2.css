@@ -1,0 +1,272 @@
+@import "reset.css";
+@import "fonts.css";
+
+:root {
+  /* 1px в макете 1920px = (100/1920)vw */
+  --px: 0.052083333vw;
+}
+
+/* (опционально) чтобы картинки не вылезали за блоки */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* p {
+   font-family: "Press Start 2P", system-ui;
+} */
+
+body {
+  margin: 0;
+  width: 100vw; /* = 1920px в макете */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Mono", monospace;
+  overflow-x: hidden;
+}
+
+.screen1 {
+  background-position: calc(-85 * var(--px)) calc(-87 * var(--px));
+  background-image: url(../assets/Шаблон\ 2.svg);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: calc(1080 * var(--px));
+}
+
+.main-screen1-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  gap: calc(136 * var(--px));
+}
+
+.top-part {
+  padding: calc(50 * var(--px)) 0 0 calc(53 * var(--px));
+  width: 100%;
+  height: calc(470 * var(--px));
+  display: flex;
+  gap: calc(418 * var(--px));
+}
+
+.title-part {
+  width: calc(975 * var(--px));
+  height: calc(280 * var(--px));
+  background-image: url(../assets/Back_shape_title.svg);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.title {
+  width: calc(560 * var(--px));
+  font-size: calc(180 * var(--px));
+}
+
+.title-console {
+  font-size: calc(21 * var(--px));
+  line-height: calc(28 * var(--px));
+}
+
+.crossers {
+  display: flex;
+  height: calc(280 * var(--px));
+}
+
+.crosser-col {
+  width: calc(140 * var(--px));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: calc(10 * var(--px));
+  padding-left: calc(10 * var(--px));
+}
+
+.crosser-col-rev {
+  width: calc(140 * var(--px));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: calc(10 * var(--px));
+}
+
+.crosser-col-rev div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.back-shapes {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.back-rects {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-rect {
+  position: absolute;
+  width: calc(1763 * var(--px));
+  height: calc(1763 * var(--px));
+  border: calc(2 * var(--px)) dashed #CCCCCC;
+  transform: rotate(45deg);
+}
+
+#back-big-rect {
+  width: calc(1320 * var(--px));
+  height: calc(1320 * var(--px));
+}
+
+#back-mid-rect {
+  width: calc(828 * var(--px));
+  height: calc(828 * var(--px));
+}
+
+#back-small-rect {
+  width: calc(395 * var(--px));
+  height: calc(395 * var(--px));
+}
+
+.back-circs {
+  padding-top: calc(51 * var(--px));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-circ {
+  position: absolute;
+  width: calc(2026 * var(--px));
+  height: calc(2026 * var(--px));
+  border-radius: 50%;
+  border: calc(2 * var(--px)) dashed #CCCCCC;
+}
+
+#back-mid-circ {
+  width: calc(1466 * var(--px));
+  height: calc(1466 * var(--px));
+}
+
+#back-small-circ {
+  width: calc(906 * var(--px));
+  height: calc(906 * var(--px));
+}
+
+.bottom-part {
+  padding-left: calc(192 * var(--px));
+  width: 100%;
+  display: flex;
+  gap: calc(138 * var(--px));
+}
+
+.skel-col {
+  width: calc(560 * var(--px));
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+#skel-img {
+  background-image: url(../assets/Back-skel.svg);
+  background-size: cover;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inf-col {
+  width: calc(140 * var(--px));
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  gap: calc(15 * var(--px));
+}
+
+.AItext-col {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(38 * var(--px));
+  gap: calc(10 * var(--px));
+}
+
+#tit-AI {
+  font-size: calc(28 * var(--px));
+}
+
+.triang-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.triang-down {
+  width: 0;
+  height: 0;
+  border-left: calc(70 * var(--px)) solid transparent;
+  border-right: calc(70 * var(--px)) solid transparent;
+  border-top: calc(140 * var(--px)) solid #000000;
+}
+
+.console-block {
+  width: calc(calc(140 * var(--px)) * 3);
+  height: calc(calc(140 * var(--px)) * 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(21 * var(--px));
+  line-height: calc(28 * var(--px));
+  color: #FFFFFF;
+  background-color: #0AD5DC;
+  padding-left: calc(7 * var(--px));
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(140 * var(--px));
+  height: fit-content;
+  padding-top: calc(313 * var(--px));
+}
+
+@media (max-width: 1280px) {
+  /* Можно сделать масштаб чуть “ближе к макету”, чтобы не зависеть от высоты браузера */
+  :root {
+    --px: 0.078125vw; /* 100/1280 */
+  }
+
+  /* На маленьком экране тонкие линии лучше оставлять в px, иначе “пляшут” */
+  .back-rect {
+    border-width: 1px;
+  }
+  .back-circ {
+    border-width: 1px;
+  }
+
+  /* Чуть защитим читабельность мелкого текста */
+  .title-console,
+  .console-block {
+    font-size: clamp(12px, calc(21 * var(--px)), 16px);
+    line-height: clamp(16px, calc(28 * var(--px)), 22px);
+  }
+}
