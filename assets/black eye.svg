@@ -1,0 +1,7 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="180" y="180" width="180" height="180" transform="rotate(180 180 180)" fill="white"/>
+<circle cx="90" cy="90" r="89.5" transform="rotate(-90 90 90)" stroke="black" stroke-dasharray="2 2"/>
+<circle cx="54" cy="90" r="53.5" transform="rotate(-90 54 90)" fill="black" stroke="white" stroke-dasharray="2 2"/>
+<line x1="38.5" y1="114" x2="38.5" y2="66" stroke="white"/>
+<line x1="63.0039" y1="90.4922" x2="15.0039" y2="90.4922" stroke="white"/>
+</svg>
